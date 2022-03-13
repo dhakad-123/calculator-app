@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        
+   </head>
+    <body>
+        
+        <h1>CALCULATOR APP</h1>
+    
+            <div class="grid-container">
+               <div class="grid-item-input" id="screen"></div>
+               <br>
+               <button class="grid-item-ac" data-action="all clear" onclick="clearall()">AC</button>
+               <button class="grid-item-del" data-action="delete" onclick="deleteDigit()">DEL</button>
+               <button class="grid-item-div" data-action="div" onclick="display('/')">/</button>
+               <button class="grid-item-1" onclick="display('1')" >1</button>
+               <button class="grid-item-2" onclick="display('2')">2</button>
+               <button class="grid-item-3" onclick="display('3')">3</button>
+               <button class="grid-item-mul" data-action="mul" onclick="display('*')" >*</button>
+               <button class="grid-item-4" onclick="display('4') ">4</button>
+               <button class="grid-item-5" onclick="display('5')">5</button>
+               <button class="grid-item-6" onclick="display('6')">6</button>
+               <button class="grid-item-plus" data-action="add" onclick="display('+')">+</button>
+               <button class="grid-item-7" onclick="display('7')">7</button>
+               <button class="grid-item-8" onclick="display('8')" >8</button>
+               <button class="grid-item-9" onclick="display('9')">9</button>
+               <button class="grid-item-minus" data-action="sub" onclick="display('-')">-</button>
+               <button class="grid-item-point" onclick="display('.')" >.</button>
+               <button class="grid-item-0" onclick="display('0')">0</button>
+               <button class="grid-item-res" data-action="result" onclick="calculate()">=</button>
+            </div>
+            <script src="logic.js"></script>
+            <div
+             style="background-color: black;bottom:0 ; position: relative;width: 100%;">           
+                 <footer style="color: aliceblue;text-align: center;">Developed by shraddha dhakad</footer>
+                 </div>
+
+    </body>
+</html>
